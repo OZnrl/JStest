@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var cc=0;
+        window.onload = function(x){
+        
+        document.getElementById("menuBT").onclick = function(x){
+            cc++;
+            if (cc==1){
+            
+
+        
+            document.getElementById("nav").style.backgroundColor="rgb(50% 0% 31%)";
+            document.getElementById("nav").style.transitionDuration="800ms";
+
+            document.getElementById("bar1").style.transform="translate(0, 11px)";
+            document.getElementById("bar1").style.transitionDuration="800ms";
+
+            document.getElementById("bar3").style.transform="translate(0, -11px)";
+            document.getElementById("bar3").style.transitionDuration="800ms";
+            
+            document.getElementById("navLink1").style.color="black";
+            document.getElementById("navLink2").style.color="black";
+            document.getElementById("navLink1").style.transitionDuration="800ms";
+            document.getElementById("navLink2").style.transitionDuration="800ms";
+            }else if (cc==2){
+        
+             cc=0;
+             document.getElementById("bar1").style.transform="translate(0, -0.5px)";
+             document.getElementById("bar1").style.transitionDuration="800ms";
+
+             document.getElementById("bar3").style.transform="translate(0, 0.4px)";
+             document.getElementById("bar3").style.transitionDuration="800ms"; 
+
+             document.getElementById("navLink1").style.color="transparent";
+             document.getElementById("navLink2").style.color="transparent";
+             document.getElementById("navLink1").style.transitionDuration="800ms";
+             document.getElementById("navLink2").style.transitionDuration="800ms";            
+                
+             document.getElementById("nav").style.backgroundColor="transparent";
+        
+            }
+        };
+    }
+        </script>
+</head>
+<body>
+    
+ 
+    <button  id ="menuBT" type="button" class="menuBT" value="x">
+        <div id="container" class="container">
+            <div id="bar1" class="bar1"></div>
+            <div id="bar2" class="bar2"></div>
+            <div id="bar3" class="bar3"></div>
+        </div>
+     </button>
+ 
+    <label class="logo">LOGO</label>
+    <nav id="nav" class="nav"> 
+
+        <ul>
+            <li><a href="index.html" id="navLink1" >home</a></li>
+            <li><a href="about.html" id="navLink2">about</a></li>
+        </ul>
+
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+    
+</body>
+
+</html>
