@@ -1,53 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-    var cc=0;
-        window.onload = function(x){
-        
-        document.getElementById("menuBT").onclick = function(x){
-            cc++;
-            if (cc==1){
-            
-
-        
-            document.getElementById("nav").style.backgroundColor="rgb(50% 0% 31%)";
-            document.getElementById("nav").style.transitionDuration="800ms";
-
-            document.getElementById("bar1").style.transform="translate(0, 11px)";
-            document.getElementById("bar1").style.transitionDuration="800ms";
-
-            document.getElementById("bar3").style.transform="translate(0, -11px)";
-            document.getElementById("bar3").style.transitionDuration="800ms";
-            
-            document.getElementById("navLink1").style.color="black";
-            document.getElementById("navLink2").style.color="black";
-            document.getElementById("navLink1").style.transitionDuration="800ms";
-            document.getElementById("navLink2").style.transitionDuration="800ms";
-            }else if (cc==2){
-        
-             cc=0;
-             document.getElementById("bar1").style.transform="translate(0, -0.5px)";
-             document.getElementById("bar1").style.transitionDuration="800ms";
-
-             document.getElementById("bar3").style.transform="translate(0, 0.4px)";
-             document.getElementById("bar3").style.transitionDuration="800ms"; 
-
-             document.getElementById("navLink1").style.color="transparent";
-             document.getElementById("navLink2").style.color="transparent";
-             document.getElementById("navLink1").style.transitionDuration="800ms";
-             document.getElementById("navLink2").style.transitionDuration="800ms";            
-                
-             document.getElementById("nav").style.backgroundColor="transparent";
-        
-            }
-        };
-    }
-        </script>
+    <script src="script.js"></script>
 </head>
 <body>
     
